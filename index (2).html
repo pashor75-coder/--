@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Армавиртелеремонт | Ремонт телевизоров в Армавире</title>
+    <style>
+        :root {
+            --orange: #ff6600;
+            --dark: #121212;
+            --grey: #1e1e1e;
+            --light-grey: #f4f4f4;
+            --text-light: #ffffff;
+            --text-dark: #333333;
+        }
+
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            background-color: var(--dark); 
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--orange);
+        }
+        .header-logo img {
+            max-height: 100px;
+            width: auto;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--grey);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        nav a:hover { color: var(--orange); }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.4rem; color: var(--orange); margin-bottom: 30px; }
+        .btn-call {
+            background: var(--orange);
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 8px 20px rgba(255,102,0,0.3);
+        }
+
+        /* Content */
+        .container { max-width: 1100px; margin: auto; padding: 60px 20px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .card {
+            background: var(--grey);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid var(--orange);
+        }
+        .card h3 { color: var(--orange); margin-top: 0; }
+
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-logo">
+        <img src="logo.jpg" alt="#Армавиртелеремонт">
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#prices">Цены</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <div class="container">
+        <h1>Ремонт телевизоров в Армавире</h1>
+        <p>Профессиональный сервис с 1995 года</p>
+        <a href="tel:+79298501993" class="btn-call">Позвонить мастеру</a>
+    </div>
+</section>
+
+<section class="container" id="about">
+    <h2 style="text-align:center; font-size: 2.5rem;">Почему выбирают <span style="color:var(--orange)">нас?</span></h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Опыт 25+ лет</h3>
+            <p>Мастер Александр Парфилов успешно чинит технику с 1995 года. Мы знаем о телевизорах всё.</p>
+        </div>
+        <div class="card">
+            <h3>Скидки пенсионерам</h3>
+            <p>Предоставляем льготные условия 10% для старшего поколения жителей Армавира.</p>
+        </div>
+        <div class="card">
+            <h3>Гарантия</h3>
+            <p>На все виды работ выдается гарантийный талон. Используем только проверенные запчасти.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>#Армавиртелеремонт &copy; 2026. Все права защищены. <br> г. Армавир, работаем по звонку.</p>
+</footer>
+
+</body>
+</html>
