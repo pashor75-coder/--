@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Армавиртелеремонт — ремонт LCD/LED телевизоров, ноутбуков и ПК в Армавире</title>
+    <meta name="description" content="Профессиональный ремонт LCD и LED телевизоров, ноутбуков, компьютеров и усилителей звука в Армавире. Качественно, с гарантией, доступные цены.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Армавиртелеремонт — ремонт телевизоров и ПК">
+    <meta property="og:description" content="Профессиональный ремонт телевизоров, ноутбуков и усилителей в Армавире. Гарантия на работы.">
+    <meta property="og:image" content="https://armavirteleremont.github.io/remontledtv/img/logo.jpg">
+    <meta property="og:url" content="https://armavirteleremont.github.io/remontledtv/">
+
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(109234230, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --accent: #ff6600; 
+            --accent-gradient: linear-gradient(135deg, #ff6600 0%, #ff9f43 100%);
+            --vk-color: #0077ff;
+            --rutube-color: #e91e63;
+            --yandex-color: #f33f34;
+            --bg-light: #f8fafc;
+            --text-main: #1e293b;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--bg-light); 
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Кнопки ВК */
+        .vk-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #fff;
+            background: var(--vk-color);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .vk-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 119, 255, 0.3);
+        }
+        .vk-icon { width: 20px; height: 20px; fill: currentColor; }
+
+        /* Слайдер */
+        .hero-slider { height: 500px; width: 100%; overflow: hidden; background: #000; position: relative; }
+        .swiper { width: 100%; height: 100%; }
+        .swiper-slide { display: flex; align-items: center; justify-content: center; position: relative; }
+        .swiper-slide img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5; }
+        
+        .slide-overlay { 
+            position: relative; z-index: 10; text-align: center; color: #fff; width: 90%; max-width: 1000px; padding: 20px;
+        }
+        .slide-overlay h1 { 
+            font-size: clamp(2rem, 6vw, 4rem); text-transform: uppercase; font-weight: 900; margin-bottom: 15px;
+            background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.1;
+        }
+        .slide-overlay p {
+            font-size: clamp(1rem, 3vw, 1.5rem); font-weight: 400; text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Навигация */
+        .main-nav {
+            background: rgba(255, 255, 255, 0.98); 
+            padding: 20px 0; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08); 
+            position: sticky; 
+            top: 0; 
+            z-index: 100;
+        }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; padding: 0 15px; }
+        .main-nav ul { display: flex; list-style: none; gap: 20px; flex-wrap: wrap; justify-content: center; }
+        .main-nav a { 
+            text-decoration: none; 
+            color: var(--text-main); 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            font-size: 16px; 
+            transition: var(--transition);
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+        .main-nav a:hover { 
+            color: var(--accent); 
+            background: rgba(255, 102, 0, 0.05);
+        }
+
+        /* Контейнеры и карточки */
+        .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 2.2rem; text-transform: uppercase; font-weight: 900; }
+        .section-title span { color: var(--accent); }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { 
+            background: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 20px; 
+            box-shadow: var(--card-shadow); transition: var(--transition); border: 1px solid rgba(0,0,0,0.05); 
+            display: flex; flex-direction: column;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .card h3 { margin-bottom: 15px; color: var(--accent); }
+        
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background: #fff;
+        }
+
+        .stars { color: #ffcc00; margin-bottom: 10px; font-size: 1.2rem; }
+
+        .btn { 
+            display: inline-block; text-decoration: none; padding: 15px 30px; border-radius: 50px; 
+            font-weight: 700; text-transform: uppercase; transition: var(--transition); text-align: center; color: #fff;
+        }
+        .btn-rutube { background: var(--rutube-color); margin-top: 20px; }
+        .btn-yandex { background: var(--yandex-color); margin-top: 30px; padding: 12px 25px; font-size: 0.9rem; }
+
+        /* Адаптивный блок для видео Rutube */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Пропорции 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            margin: 0 auto 30px auto;
+            max-width: 1000px;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Таблица цен */
+        .price-table { width: 100%; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: var(--card-shadow); border-collapse: collapse; }
+        .price-table th { background: var(--text-main); color: #fff; padding: 20px; text-align: left; }
+        .price-table td { padding: 15px 20px; border-bottom: 1px solid #edf2f7; }
+
+        /* Подвал и Контакты */
+        footer { background: #0f172a; color: #fff; padding: 60px 20px; text-align: center; }
+        footer .section-title { color: #fff; }
+        
+        .contact-phone {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--accent);
+            text-decoration: none;
+            margin: 15px 0;
+            transition: var(--transition);
+        }
+        .contact-phone:hover { color: #ff9f43; }
+
+        .footer-socials {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .map-container { height: 350px; border-radius: 20px; overflow: hidden; margin: 30px auto; max-width: 1000px; border: 2px solid rgba(255,102,0,0.2); }
+        .legal-info { opacity: 0.6; font-size: 0.9rem; margin-top: 30px; }
+
+        /* Мобильная адаптация */
+        @media (max-width: 768px) {
+            .hero-slider { height: 350px; }
+            .main-nav ul { gap: 10px; justify-content: center; }
+            .main-nav a { font-size: 14px; padding: 6px 8px; }
+            .section-title { font-size: 1.8rem; }
+            .grid { grid-template-columns: 1fr; }
+            .price-table th, .price-table td { padding: 12px 10px; font-size: 14px; }
+            .footer-socials { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero-slider">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/logo.jpg" alt="Главный логотип">
+                <div class="slide-overlay">
+                    <h1>Армавиртелеремонт</h1>
+                    <p>всё что нужно при ремонте lcd, led телевизоров, ноутбуков, компьютеров</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slide2.jpg" alt="Ремонт телевизоров и ПК">
+                <div class="slide-overlay">
+                    <h1>Качественный ремонт</h1>
+                    <p>С гарантией 2 месяца от нашей мастерской</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slide3.jpg" alt="Ремонт усилителей">
+                <div class="slide-overlay">
+                    <h1>Профессиональный подход</h1>
+                    <p>Беремся за сложные случаи и сварочные инверторы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="main-nav">
+    <div class="nav-container">
+        <ul>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#video">Видео</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#prices">Цены</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container" id="services">
+    <h2 class="section-title">Наши <span>Услуги</span></h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Ремонт LCD / LED</h3>
+            <p>Профессиональное восстановление подсветки, детальный и блочный ремонт телевизоров всех марок.</p>
+            <div style="margin-top: auto; background: var(--accent); color: #fff; padding: 10px; border-radius: 8px; font-weight: 700; text-align: center; font-size: 0.9rem;">
+                Гарантия мастерской — 2 месяца
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="img/logo1.jpg" alt="Ремонт Усилителей" class="card-img">
+            <h3>Ремонт Усилителей</h3>
+            <p>Ремонт домашних усилителей звука высшего и 1-го класса. Также выполняем профессиональное восстановление сварочных инверторов любой сложности.</p>
+        </div>
+
+        <div class="card">
+            <h3>Компьютерная помощь</h3>
+            <p>Установка и настройка ОС Windows, драйверов и программ. Чистка от пыли и замена термопасты на ноутбуках и ПК. Также выполняем восстановление ПО и прошивку Smart TV.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="video" style="background: rgba(0,0,0,0.02); border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;">
+    <h2 class="section-title">Примеры <span>Работ</span></h2>
+    
+    <div class="video-wrapper">
+        <iframe src="https://rutube.ru/play/embed/7a29e518ad1adabbd08cd502dda7538d/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </div>
+
+    <div style="text-align: center;">
+        <a href="https://rutube.ru/plst/1634588" target="_blank" class="btn btn-rutube">Смотреть все видео на Rutube</a>
+    </div>
+</div>
+
+<div class="container" id="reviews">
+    <h2 class="section-title">Отзывы <span>Клиентов</span></h2>
+    <div class="grid">
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <p><strong>Илья</strong></p>
+            <p>«Отличный мастер, быстро и качественно починил телевизор, цена адекватная»</p>
+        </div>
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <p><strong>Марина</strong></p>
+            <p>«Ремонтировала ноутбук, все работает отлично, спасибо за работу!»</p>
+        </div>
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <p><strong>Владимир</strong></p>
+            <p>«Профессиональный подход к делу, рекомендую этот сервис всем знакомым»</p>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <a href="https://www.yandex.ru/search/?text=%D0%BE%D1%82%D0%B7%D1%8B%D0%B2%D1%8B+%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81+%D0%B0%D1%80%D0%BC%D0%B0%D0%B2%D0%B8%D1%80%D1%82%D0%B5%D0%BB%D0%B5%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82&lr=131511" target="_blank" class="btn btn-yandex">Читать все отзывы на Яндекс Картах</a>
+    </div>
+</div>
+
+<div class="container" id="prices">
+    <h2 class="section-title">Прайс-<span>лист</span></h2>
+    <table class="price-table">
+        <tr><th>Тип услуги</th><th>Стоимость</th></tr>
+        <tr><td>Ремонт подсветки телевизора</td><td>от 2000 руб.</td></tr>
+        <tr><td>Ремонт усилителей (высшего, 1 класса)</td><td>от 2000 руб.</td></tr>
+        <tr><td>Сварочные инверторы</td><td>от 1500 руб.</td></tr>
+        <tr><td>Чистка ноутбука + замена термопасты</td><td>от 1200 руб.</td></tr>
+        <tr><td>Установка Windows / Настройка ПО</td><td>от 1000 руб.</td></tr>
+    </table>
+</div>
+
+<footer id="contacts">
+    <h2 class="section-title">Наши <span>Контакты</span></h2>
+    <p>г. Армавир, ул. Туапсинская, 503</p>
+    
+    <a href="tel:+79298501993" class="contact-phone">+7 (929) 850-19-93</a>
+    
+    <div class="footer-socials">
+        <a href="https://vk.com/parfiloff" target="_blank" class="vk-btn">
+            <svg class="vk-icon" viewBox="0 0 24 24"><path d="M15.071 21.921c-6.842 0-10.742-4.686-10.903-12.476h3.415c.112 5.714 2.624 8.13 4.62 8.629V9.445H15.44v4.927c1.844-.195 3.922-2.428 4.577-4.927h3.219c-.482 3.125-2.784 5.358-4.441 6.326 1.657.781 4.331 2.656 5.205 5.602h-3.52c-.683-2.128-2.383-3.77-4.04-3.935v3.935h-1.37z"/></svg>
+            @parfiloff
+        </a>
+        <a href="https://vk.com/armavirteleremont" target="_blank" class="vk-btn">
+            <svg class="vk-icon" viewBox="0 0 24 24"><path d="M15.071 21.921c-6.842 0-10.742-4.686-10.903-12.476h3.415c.112 5.714 2.624 8.13 4.62 8.629V9.445H15.44v4.927c1.844-.195 3.922-2.428 4.577-4.927h3.219c-.482 3.125-2.784 5.358-4.441 6.326 1.657.781 4.331 2.656 5.205 5.602h-3.52c-.683-2.128-2.383-3.77-4.04-3.935v3.935h-1.37z"/></svg>
+            @armavirteleremont
+        </a>
+    </div>
+
+    <div class="map-container">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=41.114757%2C44.975440&z=16" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    
+    <div class="legal-info">
+        <p>Александр Вячеславович Парфилов</p>
+        <p>ИНН: 230208575147</p>
+        <p>© 2026 — Армавиртелеремонт</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    // Инициализация слайдера с красивым затуханием (fade) и автоматической сменой кадров
+    const swiper = new Swiper('.swiper', { 
+        loop: true, 
+        autoplay: { delay: 4000, disableOnInteraction: false }, 
+        effect: 'fade' 
+    });
+</script>
+</body>
+</html>
